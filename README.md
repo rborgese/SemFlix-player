@@ -13,3 +13,5 @@ Please not that this project is currently not finished and work in progress
 4. Create all build files at once with `gulp dist`
 
 Now open the project from you favourite player and have fun!
+
+Credits: Media files are © copyright Blender Foundation | www.blender.org.
