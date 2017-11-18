@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: percentage($base-font-size / 16px);
+  box-sizing: border-box;
+
+  // Example of varying site scale at a breakpoint:
+  // @media only screen and (min-width: em(1280px)) {
+  //   font-size: percentage(($base-font-size + 1px) / 16px);
+  // }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.pane {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: white;
+  left: 0;
+}
