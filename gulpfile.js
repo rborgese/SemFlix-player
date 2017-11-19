@@ -111,36 +111,23 @@ gulp.task('watchjs', function () {
 gulp.task('javascripts', function () {
     return gulp.src(['node_modules/google-closure-library/closure/goog/**/*.js', '!node_modules/google-closure-library/closure/goog/**/*_test.js', './src/js/**/*.js'])
         // .pipe(debug()) list files
+        .pipe(sourcemaps.init())
         .pipe(closureCompiler({
             compilerPath: './node_modules/google-closure-compiler/compiler.jar',
             fileName: 'build.js',
             compilerFlags: {
-                closure_entry_point: 'semFlix.component.Player',
+                closure_entry_point: 'semFlixPlayer.init',
                 compilation_level: 'WHITESPACE_ONLY',
                 define: [
-                    "CLOSURE_NO_DEPS=true",
-                    "goog.DEBUG=false"
+                    "goog.DEBUG=true",
+                    "COMPILED=true"
                 ],
                 only_closure_dependencies: true,
-                warning_level: 'VERBOSE',
-                create_source_map: pahts.js + 'build.js.map'
+                warning_level: 'VERBOSE'
             }
         }))
         .on('error', logger.error)
-        .pipe(gulp.dest(paths.js))
-        .pipe(notify({
-            title: '✅  JS',
-            message: function(file) {
-                return "OK: " + (logger.format(file.path));
-            }
-        }));
-});
-
-gulp.task('js-online', function () {
-    return gulp.src(['./src/js/**/*.js'].concat(paths.closure))
-        .pipe(concat('all.js'))
-        .pipe(closureService())
-        .on('error', logger.error)
+        .pipe(sourcemaps.write(paths.js))
         .pipe(gulp.dest(paths.js))
         .pipe(notify({
             title: '✅  JS',
