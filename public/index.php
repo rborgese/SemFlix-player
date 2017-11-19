@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="/media/css/app.css">
     </head>
     <body>
-      <div class="test-position-el">s</div>
       <div class="video delayed-module js-video-container">
         <div class="video__overlay delayed-module js-video-overlay">
         </div>
