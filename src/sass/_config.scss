@@ -1,4 +1,17 @@
 // Type
 //------------------------------------------------------------------------------
+$base-font-size: 14px; // Used to set intial rem scale in utilities/units
 
-$base-font-size: 16px; // Used to set intial rem scale in utilities/units
+
+// Colours
+//------------------------------------------------------------------------------
+$base-player-bar-colour:      #252526;
+$icon-gradient-bottom-colour: #C1C0C1;
+$icon-gradient-top-colour:    #676767;
+$player-base-text-colour:     #A5A5A5;
+$player-dark-text-colour:     #777777;
+
+
+// Other
+//------------------------------------------------------------------------------
+$border-radius-base: 10px;

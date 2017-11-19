@@ -3,3 +3,12 @@
 @import './reset';
 @import './base/*';
 @import './components/*';
+
+.test-position-el {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background: red;
+  display: block;
+}
