@@ -1,6 +1,6 @@
 goog.provide('semFlix.component.VideoControls');
 
-goog.require('goog.events.EventTarget');
+goog.require('semFlix.component.SimpleComponent');
 
 /**
  * Video controls component (VideoControls). Controls all the controls from the
