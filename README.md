@@ -1,9 +1,9 @@
 # SemFlix player
 
-This is an test project to re-create the NetFlix player.
+This is a test project to re-create the Netflix HTML5 player.
 It should be a fun project to get myself a bit more familiar with Google Closure and the HTML5 video javascript api's.
 
-Please not that this project is currently not finished and work in progress
+Please notE that this project is currently not finished and work in progress
 
 ## Frontend setup
 
@@ -15,3 +15,9 @@ Please not that this project is currently not finished and work in progress
 Now open the project from you favourite player and have fun!
 
 Credits: Media files are © copyright Blender Foundation | www.blender.org.
+
+## Demo
+
+This is how it currently looks:
+
+![Preview of this project](https://i.imgur.com/PXFAoHx.png)
